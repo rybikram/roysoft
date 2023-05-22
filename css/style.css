@@ -1,0 +1,24 @@
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: rgb(255 255 255 / 79%) !important;
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    font-weight: 400;
+}
+
+.d-block {
+    display: block!important;
+    height: 450px;
+}
+
+.img-fluid {
+    width: 700px;
+    height: 310px;
+}
+

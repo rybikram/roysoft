@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap first demo project</title>
+  <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   
+<!-- Bootstrap Icons -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+<!--External css   -->
+<link rel="stylesheet" href="./css/style.css">
+</head>
+   
+
+<body>
+
+<!-- Original -->
+
+
+
+  <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: coral;">
+        <div class="container-fluid">
+          
+          <a class="navbar-brand text-white"  href="#"> <b> RoySoft Tech</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="#faq">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#growth">Growth</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu bg-warning">
+                  <li><a class="dropdown-item" href="#services">Software development</a></li>
+                  <li><a class="dropdown-item" href="#services">Web design</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="#services">Front-End designing</a></li>
+                  <li><a class="dropdown-item" href="#services">Android App development</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <!-- Slider -->
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/pexels-pixabay-356056.jpg" class="d-block w-100"  alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Do you make daily builds</h5>
+          <p> compiling your software daily so that tests can be run against it to identify any major coding issues introduced since the last build.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/pexels-hasan-albari-1136081.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Do you have a bug database</h5>
+          <p>Bug tracking systems include a database, which keeps track of facts pertaining to each bug. </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/pexels-isabella-mendes-860707.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Do programmers have quiet working conditions</h5>
+          <p>Coding is stressful depends largely on the company you work with.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!-- After slide portion -->
+
+    <div class="container-fluid">
+    <!-- tagline -->
+        <div class="row">
+
+               <div class="col-12">
+                 <h3 class="display-7 text-center mt-5 mb-3">Premium web development service provider. For your website <br> design or mobile app development reach out to us</h3>
+               </div>
+        </div>
+
+    <!-- features -->
+        <div class="row justify-content-evenly pt-3 pb-3" id="services">
+             
+            <div class="col-md-3 text-center mt-5">
+                 <h1> <i class="bi bi-file-code-fill text-primary"></i></h1> 
+                 <h5 class= "pt-3">Software development</h5>
+                 <p>Software development refers to a set of computer science activities dedicated to the process of creating, designing, deploying and supporting software. Software itself is the set of instructions or programs that tell a computer what to do.</p>
+            </div>
+            <div class="col-md-3 text-center mt-5">
+                <h1>  <i class="bi bi-easel-fill text-danger"></i></h1> 
+                <h5 class="pt-3">Web design</h5>
+                <p>Web design is a Web development process for creating a website that focuses on aesthetic factors like layout, user interface and other visual imagery in order to make the website more visually appealing and easy to use.</p>
+            </div>
+            <div class="col-md-3 text-center mt-5">
+                <h1> <i class="bi bi-code-slash text-success"></i></h1>
+                <h5 class="pt-3">Fornt-end design</h5>
+                <p>Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly.</p>
+            </div>
+       </div>
+  <!--Line  -->
+  <hr>
+
+   <!--Growth  -->
+       <div class="row justify-content-evenly pt-3 pb-5" id="growth">
+         <div class="col-md-5 pt-3">
+            <img src="./images/growthchart.jpg" class="img-fluid" alt="">
+         </div>
+         <div class="col-md-5 pt-3">
+              
+               <h5 class="mt-3">Software development</h5>
+               <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 75%"></div>
+              </div>
+              
+              <h5 class="mt-3">Web design</h5>
+              <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-info" style="width: 70%"></div>
+              </div>
+              
+              <h5 class="mt-3">Fornt-end designing</h5>
+              <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-warning" style="width: 95%"></div>
+              </div>
+              
+              <h5 class="mt-3">Android app development</h5>
+              <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-danger" style="width: 87%"></div>
+            </div>
+         </div>
+ </div>
+        
+
+
+ <!--Contact  -->
+
+ <div class="row justify-content-evenly pt-2 pb-5" style="background-color:  #f1f1f1;" id=contact>
+    <div class="col-md-5 mt-5">
+       <h3>Get in touch</h3>
+       <form>
+            
+           <div class="mb-3">
+               <label for="InputName" class="form-label">Full name</label>
+               <input type="text" class="form-control" id="InputName" required>
+               
+             </div>
+
+           <div class="mb-3">
+             <label for="InputEmail1" class="form-label">Email address</label>
+             <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" required>
+             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+           </div>
+         
+           <div class="mb-3">
+               <label for="FormControlTextarea1" class="form-label">Message</label>
+               <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+             </div>
+           
+             <button type="submit" class="btn btn-danger">Submit</button>
+         </form>
+    </div>
+    <div class="col-md-5 mt-5">
+          <h3 class="mb-4">Address details</h3>
+            <p>Hitec-city road, madhapur <br>
+               hyderabad, telangana <br>
+               500081 <br>
+               <i class="bi bi-telephone-fill "></i> 7291847202  </p>
+
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15224.997562905055!2d78.36776456766924!3d17.447773629217956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93dc8c5d69df%3A0x19688beb557fa0ee!2sHITEC%20City%2C%20Hyderabad%2C%20Telangana%20500081!5e0!3m2!1sen!2sin!4v1678209801750!5m2!1sen!2sin" height="240" style="border:0; width: 100%;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade " ></iframe>
+            </div>
+</div> 
+
+
+
+<!-- FAQs -->
+
+<div class="row justify-content-evenly" id="faq">
+   <div class="col-md-10">
+
+           <h3 class="text-center">FAQs</h3>
+           <div class="accordion accordion-flush border" id="accordionFlushExample">
+            
+             <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Will you maintain my site for me?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Regular maintenance is essential for a website to stabilize its flexibility and reliability. Proper maintenance would help in ensuring your website’s security, invite new visitors, boost traffic and more.</div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Will my website be mobile-friendly?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Let it be a ticket booking, online order, browsing, etc. people are keen to do these tasks on the go. So, developing a responsive website will help in increasing the look and feel of your website on both small and large devices. It also increases the number of visitors, rankings in search engines. 
+                   <hr>
+                  Yes, we ensure to develop a responsive website that would make your visitors appealing and deliver an optimized browsing experience.</div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  How long does it take to build a website?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">If you have chosen a professional website development company, then it would take around 1 to 4 months starting from scratch till the end for basic information websites with less functionality.
+                        <hr>
+                  Website builders can help you in building your website quicker but, it’s quite hard to rely on it as you have to handle everything right from scratch. Advice or opinion from an expert may help in producing better results.</div>
+              </div>
+            </div>
+          
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  Who hosts the website?
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">To build your website you will need to choose a provider to host your website, this makes your website available online. Bluehost, Fastcomet, Interserver.net, A2Hosting, etc. are some of the best hosting providers in the market.
+                       <hr>
+                  If you are not much aware of these hosting services, we recommend you the best suitable one for your requirements, or we can also help you with your existing provider if you already have one.</div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    Can I update the website myself once it’s built?
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Yes, you can keep updating your website once it is built, and we would also recommend the same. If you don’t keep your website updated with fresh content, there are possibilities to lose your online visibility in the search engines.
+                         <hr>
+                         At ColorWhistle, we have the practice of providing our clients with the documentation of how the contents can be edited in the backend with ease in the future. So, ensure that you keep your website updated frequently and yes, we do help you with that.
+                  </div>
+                </div>
+              </div>
+
+          </div>
+   </div>
+</div>
+
+
+
+<!-- Footer -->
+
+
+<div class="row bg-dark text-white justify-content-evenly pt-2 pb-5">
+   <div class="col-md-3 pt-4">
+     <h4 class="pb-2">RoySoft Tech</h5>
+     <p style="font-size: 14px;"> Custom software development involves designing, creating, deploying and maintaining software for particular users or organizations. Custom software is tailor-made to address specific needs, goals and pain points. Browse our vetted list to find the right custom software development company for your next big project. Or view our software development packages. </p>
+   </div>
+   <div class="col-md-3 pt-4">
+          <h5 class="pb-2">Important link</h5>
+  <p>
+    <a href="#" class="text-decoration-none text-light">Home</a><br>
+    <a href="#" class="text-decoration-none text-light">Contact us</a><br>
+    <a href="#" class="text-decoration-none text-light">Our Services</a><br>
+    <a href="#" class="text-decoration-none text-light">Privacy policy</a>
+
+  </p>
+   </div>
+   <div class="col-md-3 pt-4">
+      <h5 class="pb-2">Contact Us</h5>
+      <p>Hitec-city road, madhapur <br>
+        hyderabad, telangana <br>
+        500081 <br>
+        <i class="bi bi-telephone-fill "></i> &nbsp;7291847202  </p>
+   </div>
+</div>
+
+
+<!-- copyright -->
+
+<div class="row justify-content-evenly text-center text-white p-2 bg-dark">
+    <div class="col-md-12">
+        <p>All trademarks are properties of respective owners Copyrght &copy; RoySoft Tech created by bikram roy. All right reserved</p>
+    </div>
+</div>
+
+<!-- container end -->
+       </div>
+
+   <!--Bootstrap JS  -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    </body>
+</html>
